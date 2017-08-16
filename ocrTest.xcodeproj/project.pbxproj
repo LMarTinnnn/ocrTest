@@ -15,6 +15,7 @@
 		0B5C5A141F446463009524AD /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5C5A131F446463009524AD /* CaptureViewController.swift */; };
 		0BC895941F445EC3007488A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC895931F445EC3007488A3 /* Main.storyboard */; };
 		0BC8959C1F445F45007488A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC8959B1F445F45007488A3 /* Assets.xcassets */; };
+		0BDE282F1F44D28C00AD8BD4 /* TTGSnackbar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDE282E1F44D28C00AD8BD4 /* TTGSnackbar.framework */; };
 		0BFF33E71F4466030029F54D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF33E61F4466030029F54D /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +31,11 @@
 		0BC895931F445EC3007488A3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0BC895971F445F0D007488A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BC8959B1F445F45007488A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0BDE28291F44D26600AD8BD4 /* TTGSnackbar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TTGSnackbar.framework; path = "Pods/../build/Debug-iphoneos/TTGSnackbar/TTGSnackbar.framework"; sourceTree = "<group>"; };
+		0BDE282E1F44D28C00AD8BD4 /* TTGSnackbar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TTGSnackbar.framework; path = "Pods/../build/Debug-iphoneos/TTGSnackbar/TTGSnackbar.framework"; sourceTree = "<group>"; };
 		0BFF33E61F4466030029F54D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F66235EC7CF071B6872D779 /* Pods-ocrTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ocrTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ocrTest/Pods-ocrTest.debug.xcconfig"; sourceTree = "<group>"; };
+		BF7579C2A161AA7DD20BA8FC /* Pods-ocrTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ocrTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ocrTest/Pods-ocrTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BDE282F1F44D28C00AD8BD4 /* TTGSnackbar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +56,7 @@
 				0BC8958E1F445EA1007488A3 /* ocrTest */,
 				0B02AF2D1F44364400BB142E /* Products */,
 				0B02AF411F44364F00BB142E /* Frameworks */,
+				1D7C96857D9A05FD65FFD67B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,8 @@
 		0B02AF411F44364F00BB142E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0BDE282E1F44D28C00AD8BD4 /* TTGSnackbar.framework */,
+				0BDE28291F44D26600AD8BD4 /* TTGSnackbar.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -94,6 +103,15 @@
 			path = Supporting;
 			sourceTree = "<group>";
 		};
+		1D7C96857D9A05FD65FFD67B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F66235EC7CF071B6872D779 /* Pods-ocrTest.debug.xcconfig */,
+				BF7579C2A161AA7DD20BA8FC /* Pods-ocrTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B02AF3E1F44364400BB142E /* Build configuration list for PBXNativeTarget "ocrTest" */;
 			buildPhases = (
+				4FA11F00B5DC77B40755BD8C /* [CP] Check Pods Manifest.lock */,
 				0B02AF281F44364400BB142E /* Sources */,
 				0B02AF291F44364400BB142E /* Frameworks */,
 				0B02AF2A1F44364400BB142E /* Resources */,
+				0E9F19B2688757CB23FB07BF /* [CP] Embed Pods Frameworks */,
+				12DC470C5FBFD4C60105844C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,6 +186,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E9F19B2688757CB23FB07BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ocrTest/Pods-ocrTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TTGSnackbar/TTGSnackbar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGSnackbar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ocrTest/Pods-ocrTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12DC470C5FBFD4C60105844C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ocrTest/Pods-ocrTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FA11F00B5DC77B40755BD8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ocrTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0B02AF281F44364400BB142E /* Sources */ = {
@@ -294,13 +369,17 @@
 		};
 		0B02AF3F1F44364400BB142E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F66235EC7CF071B6872D779 /* Pods-ocrTest.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4DTD8YH266;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/TTGSnackbar",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/ocrTest/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
@@ -316,13 +395,17 @@
 		};
 		0B02AF401F44364400BB142E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF7579C2A161AA7DD20BA8FC /* Pods-ocrTest.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4DTD8YH266;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/TTGSnackbar",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/ocrTest/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;

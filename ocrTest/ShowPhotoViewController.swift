@@ -11,7 +11,7 @@ import UIKit
 class ShowPhotoViewController: UIViewController {
     //model
     var photoToShow: UIImage?
-    
+
     //view
 
     @IBOutlet weak var photoShower: UIImageView!

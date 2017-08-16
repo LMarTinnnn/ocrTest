@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TTGSnackbar
 
 class OcrViewController: UIViewController, UITextViewDelegate {
     //model
@@ -42,8 +43,12 @@ class OcrViewController: UIViewController, UITextViewDelegate {
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func saveResult(_ sender: Any) {
+    @IBAction func saveResult(_ sender: UIButton) {
         UIPasteboard.general.string = textView.text
+        // use ttgsnackbar to give an alert for successfully copying
+        let alertBar = TTGSnackbar(message: "已复制到粘贴板\n任您处置👄", duration: .middle)
+        alertBar.icon = UIImage(named: "完成")
+        alertBar.show()
     }
     
     //func
@@ -69,6 +74,7 @@ class OcrViewController: UIViewController, UITextViewDelegate {
         
         textView.scrollRangeToVisible(textView.selectedRange)
     }
+    
     //custom keyboard
     func createToolbar(textView : UITextView) {
         let toolbar = UIToolbar()
@@ -76,6 +82,8 @@ class OcrViewController: UIViewController, UITextViewDelegate {
         toolbar.sizeToFit()
         let done = UIBarButtonItem(title: "完成", style: .done, target: self, action: #selector(finishInput))
         toolbar.items = [done]
+        toolbar.backgroundColor = UIColor.black.withAlphaComponent(0.65)
+        toolbar.tintColor = UIColor.white
         textView.inputAccessoryView = toolbar
     }
     
