@@ -6,8 +6,31 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0B16493E1F4470220061956C /* Just.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B16493D1F4470220061956C /* Just.swift */; };
+		0B20162E1F4469CC003AF8F8 /* ShowPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B20162D1F4469CC003AF8F8 /* ShowPhotoViewController.swift */; };
+		0B2016301F446B8C003AF8F8 /* OcrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B20162F1F446B8C003AF8F8 /* OcrViewController.swift */; };
+		0B2016321F446DAD003AF8F8 /* OCR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2016311F446DAD003AF8F8 /* OCR.swift */; };
+		0B5C5A121F446239009524AD /* launchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B5C5A111F446239009524AD /* launchScreen.storyboard */; };
+		0B5C5A141F446463009524AD /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5C5A131F446463009524AD /* CaptureViewController.swift */; };
+		0BC895941F445EC3007488A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC895931F445EC3007488A3 /* Main.storyboard */; };
+		0BC8959C1F445F45007488A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC8959B1F445F45007488A3 /* Assets.xcassets */; };
+		0BFF33E71F4466030029F54D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFF33E61F4466030029F54D /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		0B02AF2C1F44364400BB142E /* ocrTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ocrTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B16493D1F4470220061956C /* Just.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Just.swift; sourceTree = "<group>"; };
+		0B20162C1F4468C7003AF8F8 /* ocrTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ocrTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		0B20162D1F4469CC003AF8F8 /* ShowPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPhotoViewController.swift; sourceTree = "<group>"; };
+		0B20162F1F446B8C003AF8F8 /* OcrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcrViewController.swift; sourceTree = "<group>"; };
+		0B2016311F446DAD003AF8F8 /* OCR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCR.swift; sourceTree = "<group>"; };
+		0B5C5A111F446239009524AD /* launchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = launchScreen.storyboard; sourceTree = "<group>"; };
+		0B5C5A131F446463009524AD /* CaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		0BC895931F445EC3007488A3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0BC895971F445F0D007488A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BC8959B1F445F45007488A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0BFF33E61F4466030029F54D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +47,7 @@
 		0B02AF231F44364400BB142E = {
 			isa = PBXGroup;
 			children = (
+				0BC8958E1F445EA1007488A3 /* ocrTest */,
 				0B02AF2D1F44364400BB142E /* Products */,
 				0B02AF411F44364F00BB142E /* Frameworks */,
 			);
@@ -42,6 +66,32 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BC8958E1F445EA1007488A3 /* ocrTest */ = {
+			isa = PBXGroup;
+			children = (
+				0BC895931F445EC3007488A3 /* Main.storyboard */,
+				0B5C5A131F446463009524AD /* CaptureViewController.swift */,
+				0B20162D1F4469CC003AF8F8 /* ShowPhotoViewController.swift */,
+				0B20162F1F446B8C003AF8F8 /* OcrViewController.swift */,
+				0B2016311F446DAD003AF8F8 /* OCR.swift */,
+				0B20162C1F4468C7003AF8F8 /* ocrTest-Bridging-Header.h */,
+				0BC895981F445F15007488A3 /* Supporting */,
+			);
+			path = ocrTest;
+			sourceTree = "<group>";
+		};
+		0BC895981F445F15007488A3 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				0B16493D1F4470220061956C /* Just.swift */,
+				0BFF33E61F4466030029F54D /* AppDelegate.swift */,
+				0BC895971F445F0D007488A3 /* Info.plist */,
+				0BC8959B1F445F45007488A3 /* Assets.xcassets */,
+				0B5C5A111F446239009524AD /* launchScreen.storyboard */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B5C5A121F446239009524AD /* launchScreen.storyboard in Resources */,
+				0BC895941F445EC3007488A3 /* Main.storyboard in Resources */,
+				0BC8959C1F445F45007488A3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B20162E1F4469CC003AF8F8 /* ShowPhotoViewController.swift in Sources */,
+				0B2016301F446B8C003AF8F8 /* OcrViewController.swift in Sources */,
+				0BFF33E71F4466030029F54D /* AppDelegate.swift in Sources */,
+				0B16493E1F4470220061956C /* Just.swift in Sources */,
+				0B5C5A141F446463009524AD /* CaptureViewController.swift in Sources */,
+				0B2016321F446DAD003AF8F8 /* OCR.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,39 +295,43 @@
 		0B02AF3F1F44364400BB142E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4DTD8YH266;
 				INFOPLIST_FILE = "$(SRCROOT)/ocrTest/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = UESTC.Magicarp.ocrTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "ocrTest/ocrTest-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		0B02AF401F44364400BB142E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4DTD8YH266;
 				INFOPLIST_FILE = "$(SRCROOT)/ocrTest/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = UESTC.Magicarp.ocrTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "ocrTest/ocrTest-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
