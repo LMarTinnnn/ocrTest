@@ -38,7 +38,8 @@ struct OCR {
 }
 
 struct TokenGetter {
-    let urlStr: String = "https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=n6OzjEGkrC5DMLuMLcDQHr6l&client_secret=urMqpBwFGlaEPET8xu4dbrtk6wtDrnz8"
+    //use your own baidu ocr instance's clien_id and cliend_secret here.
+    let urlStr: String = "https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=***&client_secret=***"
     var token: String? {
         let res = Just.get(urlStr)
         if res.ok {
